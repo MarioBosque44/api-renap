@@ -11,6 +11,10 @@ app.listen(PORT, function(){
     console.log("Servidor en el puerto", PORT)
     
 })
+
+app.get('/' , function(req, res){
+    res.send('Hola Dani')
+})
 // Middlewares
 // const corsOptions = {origin: "http://localhost:4200"}
 app.use(cors());
